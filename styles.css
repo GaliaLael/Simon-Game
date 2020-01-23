@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  background-color: #1e1b27;
+}
+
+#level-title {
+  font-family: 'Audiowide', cursive;
+  font-size: 3rem;
+  margin:  3%;
+  color: #dadada;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 6px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+
+/*  BUTTON ATTRIBUTES */
+.green {
+  background-color: #29BF12;
+  border-radius: 100% 5% 10% 5%;
+}
+
+.green-active {
+  opacity: 0.4;
+  box-shadow: 0 0 10px #29BF12;
+}
+
+.red {
+  background-color: #F21B3F;
+  border-radius: 5% 100% 5% 10%;
+}
+
+.red-active {
+  opacity: 0.4;
+  box-shadow: 0 0 10px #F21B3F;
+}
+
+.yellow {
+  background-color: #ffcb14;
+  border-radius: 5% 10% 5% 100%;
+}
+
+.yellow-active {
+  opacity: 0.4;
+  box-shadow: 0 0 10px #ffcb14;
+}
+
+.blue {
+  background-color: #08BDBD;
+  border-radius: 10% 5% 100% 5%;
+}
+
+.blue-active {
+  opacity: 0.4;
+  box-shadow: 0 0 10px #08BDBD;
+}
