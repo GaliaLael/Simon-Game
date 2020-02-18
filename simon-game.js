@@ -11,7 +11,7 @@ var level = 0;
 // listener for start of game
 $("#level-title").click(function() {
   if (!started) {
-    $("#level-title").text("LEVEL " + level);
+    $("#level-title").html("<h2>LEVEL " + level + "</h2>");
     nextSequence();
     started = true;
   }
@@ -45,10 +45,12 @@ function checkAnswer(currentLevel) {
       // display sound and color of wrong click
       playSound("wrong");
       $("body").addClass("game-over");
+      $(".center").addClass("game-over");
       $("#level-title").html("game over!<br /><h2>RESTART</h2>");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
+        $(".center").removeClass("game-over");
       }, 300);
 
       startOver();
@@ -60,7 +62,7 @@ function checkAnswer(currentLevel) {
 function nextSequence() {
   userClickedPattern = [];
   level++;
-  $("#level-title").text("LEVEL " + level);
+  $("#level-title").html("<h2>LEVEL " + level + "</h2>");
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
@@ -81,8 +83,8 @@ function nextSequence() {
 
 
 // plays sound file
-function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+function playSound(color) {
+  var audio = new Audio("sounds/" + color + ".mp3");
   audio.play();
 }
 
