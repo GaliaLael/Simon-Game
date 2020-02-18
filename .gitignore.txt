@@ -1,0 +1,4 @@
+.DS_Store
+'Simon answers'
+answers.js
+'Simon Game for presentation'
