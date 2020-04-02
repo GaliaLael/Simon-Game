@@ -9,7 +9,7 @@ var level = 0;
 
 //*************************************************************************************************** */
 // listener for start of game
-$("#level-title").click(function() {
+$(".center").click(function() {
   if (!started) {
     $("#level-title").html("<h2>LEVEL " + level + "</h2>");
     nextSequence();

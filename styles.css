@@ -17,7 +17,7 @@ h2 {
   border: none;
   font-family: 'Audiowide', cursive;
   font-size: 1.4rem;
-  margin:  3%;
+  margin: 3%;
   color: #dadada;
 }
 
@@ -42,17 +42,25 @@ h2 {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
   transform: translate(160px, 160px);
-  background: #322d41;
   height: 220px;
   width: 220px;
   border-radius: 100%;
-  border: 18px solid #1e1b27;
+  background: #1e1b27;
+
+}
+
+.center-button {
+  height: 180px;
+  width: 180px;
+  transform: translate(20px, 20px);
+  background: #322d41;
+  border-radius: 100%;
+  cursor: pointer;
   text-align: center;
   padding-top: 40px;
 }
 
 .start {
-  cursor: pointer;
   background-color: inherit;
   border: none;
 }
